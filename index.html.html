@@ -1,0 +1,210 @@
+<DOCTYPE html>
+<html><!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DM Clothing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#111;
+            color:white;
+        }
+
+        header{
+            background:black;
+            padding:20px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+        }
+
+        nav a:hover{
+            color:red;
+        }
+
+        .hero{
+            height:90vh;
+            background:url('https://images.unsplash.com/photo-1503342217505-b0a15ec3261c') no-repeat center/cover;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+
+        .hero h2{
+            font-size:50px;
+            background:rgba(0,0,0,0.6);
+            padding:20px;
+        }
+
+        .products{
+            padding:60px 20px;
+            text-align:center;
+        }
+
+        .product-container{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+
+        .product{
+            background:#222;
+            width:250px;
+            margin:15px;
+            border-radius:10px;
+            overflow:hidden;
+        }
+
+        .product img{
+            width:100%;
+        }
+
+        .product h3{
+            padding:10px;
+        }
+
+        .product p{
+            color:red;
+            padding-bottom:10px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:red;
+            color:white;
+            padding:10px 15px;
+            margin-bottom:15px;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .about{
+            padding:50px 20px;
+            text-align:center;
+            background:#1a1a1a;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:black;
+            font-size:14px;
+        }
+
+        @media(max-width:768px){
+            .hero h2{
+                font-size:30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>DM Clothing</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>DEFINE YOUR DRIP</h2>
+</section>
+<section class="products" id="shop">
+    <h2>Shop Now</h2>
+
+    <div class="product-container">
+
+        <div class="product">
+            <img src="New folder (3)\Shirt design template.jpg">
+            <h3>Classic Black Tee</h3>
+            <p>₦15,000</p>
+            <a class="btn" href="https://wa.me/2349168177260">Order on WhatsApp</a>
+        </div>
+
+        <div class="product">
+            <img src="New folder (3)\hoodie temp2.jpg">
+            <h3>Urban Hoodie</h3>
+            <p>₦28,000</p>
+            <a class="btn" href="https://wa.me/2349168177260">Order on WhatsApp</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About DM Clothing</h2>
+    <p>
+        DM Clothing is a streetwear brand focused on confidence, movement and modern fashion.
+        We design pieces that define your presence built from the effort of a 15 year old child with a dream to go big.
+    </p>
+    <h2 style="color: rgb(14, 1, 1);">Be sure to contact me at <a href="mailto:thedmclothing@gmail.com">thedmclothing@gmail.com</a> <button onclick="contactMe('+2349168177260')">Contact Me</button></h2>
+    <script>
+        function contactMe(phoneNumber) {
+            window.location.href = `tel:${2349168177260}`;
+        }
+    </script>
+    <br>
+    <audio controls autoplay loop style="display:none;">
+        <source src="New folder (3)\Beethoven - Moonlight Sonata (FULL).mp3" type="audio/mpeg"
+
+        <div class="product">
+            <img src="New folder (3)\Shirt design template.jpg">
+            <h3>Classic Black Tee</h3>
+            <p>₦15,000</p>
+            <a class="btn" href="https://wa.me/2349168177260">Order on WhatsApp</a>
+        </div>
+
+        <div class="product">
+            <img src="New folder (3)\hoodie temp2.jpg">
+            <h3>Urban Hoodie</h3>
+            <p>₦28,000</p>
+            <a class="btn" href="https://wa.me/2349168177260">Order on WhatsApp</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About DM Clothing</h2>
+    <p>
+        DM Clothing is a streetwear brand focused on confidence, movement and modern fashion.
+        We design pieces that define your presence built from the effort of a 15 year old child with a dream to go big.
+    </p>
+    <h2 style="color: rgb(14, 1, 1);">Be sure to contact me at <a href="mailto:thedmclothing@gmail.com">thedmclothing@gmail.com</a> <button onclick="contactMe('+2349168177260')">Contact Me</button></h2>
+    <script>
+        function contactMe(phoneNumber) {
+            window.location.href = `tel:${2349168177260}`;
+        }
+    </script>
+    <br>
+    <audio controls autoplay loop style="display:none;">
+        <source src="New folder (3)\Beethoven - Moonlight Sonata (FULL).mp3" type="audio/mpeg">
+</section>
+
+<footer>
+    © 2026 DM Clothing. All Rights Reserved.
+</footer>
+
+</body>
+</html>
